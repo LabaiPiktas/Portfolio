@@ -33,11 +33,6 @@ const Projects = () => {
 
   return (
     <>
-      <div className="button-container">
-        <Link to={NEW_PROJECT_ROUTE}>
-          <Button>Create new project</Button>
-        </Link>
-      </div>
       <div className="projects">
         {projects.map((project) => (
           <Link
