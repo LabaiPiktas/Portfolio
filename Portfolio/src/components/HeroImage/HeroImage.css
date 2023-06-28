@@ -1,9 +1,9 @@
 .hero {
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   object-fit: contain;
   position: fixed;
   top: -227px;
-  left: -160px;
+  left: 180px;
   z-index: -1;
 }
