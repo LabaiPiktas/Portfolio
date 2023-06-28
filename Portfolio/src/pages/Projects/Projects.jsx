@@ -4,6 +4,7 @@ import { getProjects } from "../../api/projects";
 import Button from "../../components/Button/Button";
 import ProjectCard from "./ProjectCard";
 import { PROJECT_ROUTE, NEW_PROJECT_ROUTE } from "../../routes/const";
+import AnimatedGradientBackground from "../../components/Background/AnimatedGradientBackground";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -33,6 +34,8 @@ const Projects = () => {
 
   return (
     <>
+      <AnimatedGradientBackground />
+      <h1 className="projectTitle">Mano projektai</h1>
       <div className="projects">
         {projects.map((project) => (
           <Link

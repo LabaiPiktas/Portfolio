@@ -19,6 +19,9 @@ const NewProject = ({ project }) => {
   const [title, setTitle] = useState(project?.title || "");
   const [description, setDescription] = useState(project?.description || "");
   const [imageUrl, setImageUrl] = useState(project?.imageUrl || "");
+  const [image2Url, setImage2Url] = useState(project?.image2Url || "");
+  const [image3Url, setImage3Url] = useState(project?.image3Url || "");
+  const [image4Url, setImage4Url] = useState(project?.image4Url || "");
   const [client, setClient] = useState(project?.client || "");
   const [startingDate, setStartingDate] = useState(
     project?.startingDate ? formatDate(project.startingDate) : ""
@@ -62,6 +65,9 @@ const NewProject = ({ project }) => {
       title,
       description,
       imageUrl,
+      image2Url,
+      image3Url,
+      image4Url,
       client,
       startingDate,
       endingDate,
@@ -101,8 +107,26 @@ const NewProject = ({ project }) => {
       />
       <FormItem
         type="url"
-        label="Image ULR"
+        label="Image URL"
         value={imageUrl}
+        onChange={(e) => setImageUrl(e.target.value)}
+      />
+      <FormItem
+        type="url"
+        label="Image2 URL"
+        value={image2Url}
+        onChange={(e) => setImageUrl(e.target.value)}
+      />
+      <FormItem
+        type="url"
+        label="Image3 URL"
+        value={image3Url}
+        onChange={(e) => setImageUrl(e.target.value)}
+      />
+      <FormItem
+        type="url"
+        label="Image4 URL"
+        value={image4Url}
         onChange={(e) => setImageUrl(e.target.value)}
       />
       <FormItem

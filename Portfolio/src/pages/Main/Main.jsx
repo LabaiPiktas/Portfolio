@@ -2,7 +2,7 @@ import React from "react";
 import "../Main/Main.scss";
 import AnimatedGradientBackground from "../../components/Background/AnimatedGradientBackground";
 import HeroImage from "../../components/HeroImage/HeroImage";
-import Text from "../../components/Background/Text";
+import Text from "../../components/Text/Text";
 
 const Main = () => {
   return (

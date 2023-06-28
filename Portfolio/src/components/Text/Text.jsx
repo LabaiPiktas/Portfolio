@@ -1,5 +1,5 @@
 import React from "react";
-import "./Text.css";
+import "../../components/Text/Text.css";
 
 const Text = () => {
   return (

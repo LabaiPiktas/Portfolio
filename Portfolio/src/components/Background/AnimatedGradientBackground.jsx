@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./AnimatedGradientBackground.scss";
 import HeroImage from "../HeroImage/HeroImage";
-import Text from "./Text";
+import Text from "../Text/Text";
 
 class AnimatedGradientBackground extends React.Component {
   render() {
@@ -10,11 +10,7 @@ class AnimatedGradientBackground extends React.Component {
 
     return (
       <div className="animated-gradient-background">
-        <div className="content-wrapper">
-          
-          
-          {children}
-        </div>
+        <div className="content-wrapper">{children}</div>
       </div>
     );
   }

@@ -6,6 +6,9 @@ const ProjectGeneralInfo = ({ project }) => {
     title,
     description,
     imageUrl,
+    image2Url,
+    image3Url,
+    image4Url,
     client,
     startingDate,
     endingDate,
@@ -16,20 +19,18 @@ const ProjectGeneralInfo = ({ project }) => {
     <div>
       <h1>{title}</h1>
       <p>Project description: {description}</p>
-      <img src={imageUrl} alt={title} />
-      <p>
-        <span>Client: </span>
-        {client}
+      <p className="imageP">
+        <img src={imageUrl} alt={title} />
       </p>
-      <p>
-        <span>Starting date: </span>
-        {startingDate}
+      <p className="imageP">
+        <img src={image2Url} alt={title} />
       </p>
-      <p>
-        <span>Ending date: </span>
-        {endingDate}
+      <p className="imageP">
+        <img src={image3Url} alt={title} />
       </p>
-      <ProjectPeopleInfo people={people} />
+      <p className="imageP">
+        <img src={image4Url} alt={title} />
+      </p>
     </div>
   );
 };

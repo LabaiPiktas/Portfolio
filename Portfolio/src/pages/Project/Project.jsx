@@ -35,7 +35,6 @@ const Project = () => {
 
   return (
     <div className="project-container">
-      <ProjectActions id={project.id} />
       <ProjectGeneralInfo project={project} />
     </div>
   );
